@@ -39,6 +39,7 @@ describe('<ChromeBoisDomain />', () => {
   it('has an event listener for clicks on the <canvas> element that triggers `toggleCycling`', () => {
     comp.find('canvas').simulate('click')
     expect(toggleCycling.called).to.equal(true)
+    
   })
 
   it('has an event listener for key presses on the <canvas> element that triggers `resize`', () => {
